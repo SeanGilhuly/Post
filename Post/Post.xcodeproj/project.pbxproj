@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B1EB3E21CFF8246007B6D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB3E11CFF8246007B6D23 /* AppDelegate.swift */; };
-		8B1EB3E41CFF8246007B6D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB3E31CFF8246007B6D23 /* ViewController.swift */; };
 		8B1EB3E71CFF8246007B6D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1EB3E51CFF8246007B6D23 /* Main.storyboard */; };
 		8B1EB3E91CFF8246007B6D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1EB3E81CFF8246007B6D23 /* Assets.xcassets */; };
 		8B1EB3EC1CFF8246007B6D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1EB3EA1CFF8246007B6D23 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,7 @@
 		8B1EB4101CFF8269007B6D23 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB40F1CFF8269007B6D23 /* NetworkController.swift */; };
 		8B1EB4121CFF8729007B6D23 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB4111CFF8729007B6D23 /* Post.swift */; };
 		8B1EB4141CFF8D6B007B6D23 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB4131CFF8D6B007B6D23 /* PostController.swift */; };
+		8B1EB4161CFFB108007B6D23 /* PostListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB4151CFFB108007B6D23 /* PostListTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 /* Begin PBXFileReference section */
 		8B1EB3DE1CFF8246007B6D23 /* Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Post.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1EB3E11CFF8246007B6D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B1EB3E31CFF8246007B6D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B1EB3E61CFF8246007B6D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B1EB3E81CFF8246007B6D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1EB3EB1CFF8246007B6D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		8B1EB40F1CFF8269007B6D23 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		8B1EB4111CFF8729007B6D23 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8B1EB4131CFF8D6B007B6D23 /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		8B1EB4151CFFB108007B6D23 /* PostListTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				8B1EB3E11CFF8246007B6D23 /* AppDelegate.swift */,
-				8B1EB3E31CFF8246007B6D23 /* ViewController.swift */,
-				8B1EB40F1CFF8269007B6D23 /* NetworkController.swift */,
-				8B1EB4111CFF8729007B6D23 /* Post.swift */,
-				8B1EB4131CFF8D6B007B6D23 /* PostController.swift */,
+				8BF03CE61D00C7AF009243C5 /* Model */,
+				8BF03CE71D00C7C5009243C5 /* Controller */,
+				8BF03CE51D00C431009243C5 /* ViewController */,
 				8B1EB3E51CFF8246007B6D23 /* Main.storyboard */,
 				8B1EB3E81CFF8246007B6D23 /* Assets.xcassets */,
 				8B1EB3EA1CFF8246007B6D23 /* LaunchScreen.storyboard */,
@@ -132,6 +131,31 @@
 				8B1EB4031CFF8246007B6D23 /* Info.plist */,
 			);
 			path = PostUITests;
+			sourceTree = "<group>";
+		};
+		8BF03CE51D00C431009243C5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B1EB4151CFFB108007B6D23 /* PostListTableTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8BF03CE61D00C7AF009243C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B1EB4111CFF8729007B6D23 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8BF03CE71D00C7C5009243C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B1EB4131CFF8D6B007B6D23 /* PostController.swift */,
+				8B1EB40F1CFF8269007B6D23 /* NetworkController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1EB4161CFFB108007B6D23 /* PostListTableTableViewController.swift in Sources */,
 				8B1EB4141CFF8D6B007B6D23 /* PostController.swift in Sources */,
-				8B1EB3E41CFF8246007B6D23 /* ViewController.swift in Sources */,
 				8B1EB3E21CFF8246007B6D23 /* AppDelegate.swift in Sources */,
 				8B1EB4101CFF8269007B6D23 /* NetworkController.swift in Sources */,
 				8B1EB4121CFF8729007B6D23 /* Post.swift in Sources */,
@@ -494,6 +518,7 @@
 				8B1EB4081CFF8246007B6D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1EB4091CFF8246007B6D23 /* Build configuration list for PBXNativeTarget "PostTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +527,7 @@
 				8B1EB40B1CFF8246007B6D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1EB40C1CFF8246007B6D23 /* Build configuration list for PBXNativeTarget "PostUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +536,7 @@
 				8B1EB40E1CFF8246007B6D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
